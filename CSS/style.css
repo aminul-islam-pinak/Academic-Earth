@@ -1,0 +1,44 @@
+.navbar-brand{
+font-family: 'Ubuntu', sans-serif;
+font-size: 2em;
+font-weight: bold;
+color: #fff;
+}
+
+.custom-nav .custom-nav-item a{
+    color: #fff !important;
+}
+
+.custom-nav-item:hover{
+    background-color: #dc3545;
+    border: solid #dc3545 1px;
+    border-radius: 10px;
+}
+
+.myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+.header-overlay{
+    height:100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    z-index:1;
+    background:#225470;
+    opacity:0.85;
+  }
+  
+  .header-content{
+    z-index:2;
+  }
+  
+  
+  
+  
+
+  
