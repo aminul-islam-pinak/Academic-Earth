@@ -20,7 +20,7 @@
 <body>
     <!--Start Nagivation -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-3 fixed-top">
-      <a class="navbar-brand" href="index.php">Academic earth</a>
+      <a class="navbar-brand" href="index.html">Academic earth</a>
       <span class="navbar-text">learn and implement</span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAlMarkp" aria-controls="navbarNavAlMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,7 +28,7 @@
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <ul class="navbar-nav custom-nav p-3 ">
-      <li class="nav-item custom-nav-item"><a href="index.php" 
+      <li class="nav-item custom-nav-item"><a href="index.html" 
       class="nav-link">Home</a></li>
       <li class="nav-item custom-nav-item"><a href="#" 
       class="nav-link">Courses</a></li>
@@ -41,9 +41,9 @@
       <li class="nav-item custom-nav-item"><a href="#" 
       class="nav-link">Log Out</a></li>
       <li class="nav-item custom-nav-item"><a href="#" 
-      class="nav-link">Log In</a></li>
+      class="nav-link"data-bs-toggle="modal" data-bs-target="#StuLogInModelCenter">Log In</a></li>
       <li class="nav-item custom-nav-item"><a href="#"
-       class="nav-link">Sing up</a></li>
+       class="nav-link" data-bs-toggle="modal" data-bs-target="#StuRegModelCenter">Sing up</a></li>
       <li class="nav-item custom-nav-item"><a href="#" 
       class="nav-link">FeedBack</a></li>
       <li class="nav-item custom-nav-item"><a href="#" 
@@ -202,7 +202,7 @@ www.academicearth.com</p>
     <div class="row">
       <div class="col-md-8 col-sm-6 col-xs-12">
         <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-     <a href="#">Academic Earth</a>.
+     <a href="#LogIn"data-bs-toggle="modal" data-bs-target="#adminLogInModelCenter">Admin Panel</a>.
         </p>
       </div>
 
@@ -218,6 +218,120 @@ www.academicearth.com</p>
   </div>
 </footer>
 
+<!--Start Registration Model-->
+
+
+<!-- Modal -->
+<div class="modal fade" id="StuRegModelCenter" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="StuLogInModelCenterLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="StuRegModelCenterLabel">Student Registration </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--Start Registration Buttom-->
+        <form>
+           <div class="form-group">
+           <i class="fas fa-envelope"></i> <label for="Stumail">Email address</label>
+            <input type="email" class="form-control" id="Stumail" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+           <i class="fas fa-key"></i> <label for="Stupass">Password</label>
+            <input type="password" class="form-control" id="Stupass" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <i class="fas fa-key"></i> <label for="Stupass">New Password</label>
+             <input type="password" class="form-control" id="Stupass" placeholder="Password">
+           </div>
+          
+        </form>
+        <!--End Registration Buttom-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--Start LogIn Buttom--> 
+<div class="modal fade" id="StuLogInModelCenter" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="StuLogInModelCenterLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="StuLogInModelCenterLabel">Student LogIn </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--Start LogIn Buttom-->
+        <form id="stuLoginForm">
+          <div class="form-group">
+            <i class="fas fa-envelope"></i> <label for="StuLogemail">Email address</label>
+             <input type="email" class="form-control" id="StuLogemail" aria-describedby="emailHelp" placeholder="Enter email">
+             
+           </div>
+         
+          
+          <div class="form-group">
+           <i class="fas fa-key"></i> <label for="StuLogpass">Password</label>
+            <input type="password" class="form-control" id="StuLogpass" placeholder="Password">
+          </div>
+          
+          
+        </form>
+        <!--End LogIn Buttom-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="stuLoginBtn">LogIn</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--End LogIn Buttom-->
+
+<!--Start Admin LogIn Buttom--> 
+<div class="modal fade" id="adminLogInModelCenter" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="StuLogInModelCenterLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="adminLogInModelCenterLabel">Admin LogIn </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--Start Admin LogIn Buttom-->
+        <form id="adminLoginForm">
+          <div class="form-group">
+            <i class="fas fa-envelope"></i> <label for="adminLogemail">Email address</label>
+             <input type="email" class="form-control" id="adminLogemail" aria-describedby="emailHelp" placeholder="Enter email">
+             
+           </div>
+         
+          
+          <div class="form-group">
+           <i class="fas fa-key"></i> <label for="adminLogpass">Password</label>
+            <input type="password" class="form-control" id="adminLogpass" placeholder="Password">
+          </div>
+          
+          
+        </form>
+        <!--End  Admin LogIn Buttom-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="adminLoginBtn">LogIn</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--End LogIn Buttom-->
+
+<!--End Registration Model-->
 
 
 
